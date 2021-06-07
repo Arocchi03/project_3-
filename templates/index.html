@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Machine Learning with Crime and Weather Data - Chicago</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h4>Enter Data to Estimate Number of Crimes per Day</h4>
+      <form action="/calculate" method="post">
+        Minimum Temperature (F): <input type="number" name="tmin" value="0">  <br>
+        Maximum Temperature (F): <input type="number" name="tmax" value="0"><br>
+        Precipitation (inches): <input type="number" name="prcp" value="0">  <br>
+        Snow (inches): <input type="number" name="snow" value="0"><br>
+        Wind Speed (mph): <input type="number" name="wspd" value="0">  <br>
+        <input type="submit" name= "form" value="Submit">
+    </form>
+      <!--<p><a class="btn btn-primary btn-lg" href="/calculate" role="button">Calculate</a></p>-->
+    </div>
+  </div>
+</body>
+
+</html>
